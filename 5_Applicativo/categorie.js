@@ -8,8 +8,8 @@ function dif(){
     close();
     var pag=window.open("difficolta.html");
 } 
-function categoria(){
-    const prendicategoria = document.getElementById("categoria").innerHTML;
+function categoria(x){
+    const prendicategoria = document.getElementById("categoria"+x).innerHTML;
     sessionStorage.setItem("2",prendicategoria);
 
     cat = sessionStorage.getItem("2");
