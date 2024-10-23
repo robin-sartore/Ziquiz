@@ -1,6 +1,6 @@
 @font-face {
     font-family: titolo;
-    src: url(Modak-Regular.ttf);
+    src: url(../font/Modak-Regular.ttf);
   }
   
 body{
@@ -13,7 +13,6 @@ body{
     text-align: center;
     font-family: titolo;
     color:#52C5A6;
-    margin-bottom: -40px;
     /*text-shadow:
     -1px 0 #9FFFCB, // Ombra a sinistra 
     0 1px #9FFFCB,  // Ombra in basso 
@@ -23,7 +22,7 @@ body{
 }
 
 
-.difficolta{
+.categoria{
 margin:10px auto; 
   display:block;
   text-align: center;
@@ -46,16 +45,6 @@ margin:10px auto;
 }
 .nickname{
   margin-top: 10px;
-  position: relative;
-  font-size: 150px;
-  text-align: center;
-  font-family: titolo;
-  color: #3C9B9B;
-  font-size: 50px;
-  height: auto;
-}
-.cat{
-  margin-bottom: +10px;
   position: relative;
   font-size: 150px;
   text-align: center;

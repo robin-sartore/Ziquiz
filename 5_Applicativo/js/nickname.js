@@ -9,7 +9,6 @@ function insert(){
         {
 
             alert("Inserire nickname");
-            //document.getElementById("nickname").style.display ="none";
          }
          else{
 
@@ -23,7 +22,6 @@ function insert(){
             
 
          }
-        //DA RISOLVERE!!
     
     
 
