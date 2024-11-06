@@ -23,9 +23,6 @@
 <body onload="refresh(),refreshCat(),refreshdif()">
     <div id="nicknamefinal" class="nickname"></div>
     
-   
- 
-
         <div class="titolo" id="cat">
 
         </div>
@@ -38,15 +35,18 @@
     <div>
             <div class="domanda" id="domanda">ciao</div>
     <div class="risposte">
-        <button id="risposta1" class="risposta"></button>
-        <button id="risposta2" class="risposta"></button>
+        <button id="risposta1" class="risposta" onclick="verificaDomanda(1)"></button>
+        <button id="risposta2" class="risposta" onclick="verificaDomanda(2)"></button>
         <br>
-        <button id="risposta3" class="risposta"></button>
-        <button id="risposta4" class="risposta"></button>
+        <button id="risposta3" class="risposta" onclick="verificaDomanda(3)"></button>
+        <button id="risposta4" class="risposta"onclick="verificaDomanda(4)"></button>
     
     </div>
     
     </div>
+    <div class="nrdomande" id="nrdomande"></div>
+    <div class="punteggioScritta" >Punteggio:</div>
+    <div class="punteggio" id="punteggio">0</div>
     <div class="back" onclick="backcat()">
         <img src="../immagini/back.png" width="50px">
     </div>

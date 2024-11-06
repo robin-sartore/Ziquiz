@@ -49,8 +49,8 @@ margin:10px auto;
   display:block;
   text-align: center;
   position:relative; 
-  height: 100px;
-  width: 400px;
+  height: 125px;
+  width: 450px;
   top: center;
   border-radius: 12px;
   background-color: #3C9B9B;
@@ -86,4 +86,34 @@ margin:10px auto;
   color: #ECB0E1;
   font-size: 50px;
   height: auto;
+}
+.nrdomande{
+  font-family: titolo;
+  position:absolute; 
+  left: 20px; 
+  top:10px;
+  height: 100px;
+  width: 100px;
+  font-size: 50px;
+  color:#ECB0E1;
+  }
+.punteggio{
+  font-family: titolo;
+  position:absolute; 
+  right: 10px; 
+  top:10px;
+  height: 100px;
+  width: 110px;
+  font-size: 50px;
+  color:#ECB0E1;
+}
+.punteggioScritta{
+  font-family: titolo;
+  position:absolute; 
+  right: 10px; 
+  top:10px;
+  height: 100px;
+  width: 375px;
+  font-size: 50px;
+  color:#ECB0E1;
 }

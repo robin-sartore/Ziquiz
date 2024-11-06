@@ -21,5 +21,13 @@ function refreshdif(){
     difficolta = sessionStorage.getItem("3");
 
     document.getElementById("dif").innerHTML= difficolta;
-
+    if(difficolta=="FACILE"){
+        document.getElementById("nrdomande").innerHTML= "1/10";
+    }
+    else if(difficolta=="MEDIO"){
+        document.getElementById("nrdomande").innerHTML= "1/20";
+    }
+    else{
+        document.getElementById("nrdomande").innerHTML= "1/30";
+    }
 }
