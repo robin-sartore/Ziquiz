@@ -1,8 +1,9 @@
 difficolta= sessionStorage.getItem("3");
 categoria= sessionStorage.getItem("2");
+nickname=sessionStorage.getItem("1");
 let r;
 var punti=0;
-
+let totdomande;
 let posrisposte=[1,2,3,4];
 mescola(posrisposte);
 let cdomande=1;
@@ -28,7 +29,7 @@ function backcat() {
 }
 
 console.log('../json/'+categoria+difficolta+'.json');
-fetch('../json/'+categoria+difficolta+'.json')
+fetch('http://www.samtinfo.ch/i22RobinSartore/Ziquiz/json/'+categoria+difficolta+'.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('Errore nell\'apertura');
@@ -59,7 +60,8 @@ function domandaSuccesiva(){
     cdomande++
 
     if(difficolta=="FACILE"){
-        document.getElementById("nrdomande").innerHTML= cdomande+"/10";
+        totdomande=cdomande+"/10";
+        document.getElementById("nrdomande").innerHTML= totdomande;
 
         if(nrdomande.length<10){
             nrdomanda=Math.floor(Math.random() * 10);
@@ -79,10 +81,21 @@ function domandaSuccesiva(){
             impostaDomanda(domande[nrdomanda].rispostaGiusta, "risposta"+posrisposte[3]);
             
         }
+        else{
+            salvaPunteggio()
+
+            
+            close();
+            var nuova=window.open("risultato.html");
+
+
+        }
     }
     else if(difficolta=="MEDIO"){
-        document.getElementById("nrdomande").innerHTML= cdomande+"/20";
-        
+        totdomande=cdomande+"/20";
+
+        document.getElementById("nrdomande").innerHTML= totdomande;
+
         if(nrdomande.length<20){
             nrdomanda=Math.floor(Math.random() * 20);
             if(!nrdomande.includes(nrdomanda)){
@@ -101,9 +114,20 @@ function domandaSuccesiva(){
             impostaDomanda(domande[nrdomanda].rispostaGiusta, "risposta"+posrisposte[3]);
             
         }
+        else{
+            salvaPunteggio()
+
+            
+            close();
+            var nuova=window.open("risultato.html");
+
+
+        }
     }
     else{
-        document.getElementById("nrdomande").innerHTML= cdomande+"/30";
+        totdomande=cdomande+"/30";
+
+        document.getElementById("nrdomande").innerHTML=totdomande;
         if(nrdomande.length<30){
             nrdomanda=Math.floor(Math.random() * 30);
             console.log(nrdomanda);
@@ -124,6 +148,15 @@ function domandaSuccesiva(){
             impostaDomanda(domande[nrdomanda].rispostaGiusta, "risposta"+posrisposte[3]);
             
         }
+        else{
+            salvaPunteggio()
+
+            
+            close();
+            var nuova=window.open("risultato.html");
+
+
+        }
     }
        
 }
@@ -131,7 +164,22 @@ function domandaSuccesiva(){
 function verificaDomanda(x){
     if(x==posrisposte[3]){
         document.getElementById("punteggio").innerHTML =punti;
-        punti+=10;
+        sessionStorage.setItem(4,punti);
+        if(difficolta=="FACILE"){
+           if(punti<100) {
+            punti+=10;
+           }
+        }
+        else if(difficolta=="MEDIO"){
+                if(punti<400) {
+                 punti+=20;
+                }
+            }
+        else{
+            if(punti<900) {
+                punti+=30;
+               }
+        }
 
     }
     domandaSuccesiva();
@@ -139,15 +187,41 @@ function verificaDomanda(x){
 
 function mescola(arr) {
     arr.sort(() => Math.random() - 0.5);
-  //questo metodo è meno funzionale pero per qualche motivo va
+  
+    }
+    //questo metodo è meno funzionale pero per qualche motivo va
   //se utilizzo questo metodo che è piu funzionale:
   /*for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [arr[i], arr[j]] = [arr[j], arr[i]]; 
 }*/
     //non rimescola quando richiamo la funzione
-        
-    }
 
 
+    
 
+function salvaPunteggio() {
+       // Dati da inviare
+       const dati = {
+        nome: nickname,
+        punteggio: punti,
+        categoria: categoria,
+        difficolta: difficolta
+    };
+
+    // Invia i dati a PHP usando fetch
+    fetch('../php/record.php', {
+        method: 'POST', // metodo di invio
+        headers: {
+            'Content-Type': 'application/json'  // Tipo di contenuto
+        },
+        body: JSON.stringify(dati)  // Dati da inviare, convertiti in formato JSON
+    })
+    .then(response => response.json())  // Assumiamo che il server ritorni una risposta JSON
+    .then(data => {
+        console.log('Dati salvati con successo', data);
+    })
+    .catch(error => {
+        console.error('Errore nella richiesta:', error);
+    });
+}

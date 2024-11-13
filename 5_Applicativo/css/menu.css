@@ -45,6 +45,16 @@ body{
    
 }
 
+.dif{
+  margin-bottom: +10px;
+  position: relative;
+  font-size: 150px;
+  text-align: center;
+  font-family: titolo;
+  color: #3C9B9B;
+  font-size: 50px;
+  height: auto;
+}
 
 .gioca{
   margin:0 auto; 
@@ -68,4 +78,11 @@ body{
   color: #3C9B9B;
   font-size: 50px;
   height: auto;
+}
+.back
+{
+    position: fixed;
+    width: 50%;
+    bottom: 10px;
+    margin-left: 10px;
 }
