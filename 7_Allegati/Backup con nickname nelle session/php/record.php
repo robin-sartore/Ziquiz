@@ -11,14 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $difficolta = $data['difficolta'];
         $filePath = '../json/' . $categoria . '_' . $difficolta . '_dati.json';
 
-        // Controlla se il file esiste
-        if (!file_exists($filePath)) {
-            // Se il file non esiste, crea il file con un array vuoto
-            file_put_contents($filePath, json_encode([]));  // Crea il file vuoto
-        }
-
         // Legge il contenuto esistente del file
-        $datiCorrenti = json_decode(file_get_contents($filePath), true);
+        $datiCorrenti = file_exists($filePath) ? json_decode(file_get_contents($filePath), true) : [];
 
         // Aggiungi il nuovo record alla lista
         $datiCorrenti[] = ['nome' => $nome, 'punteggio' => $punteggio];
@@ -51,7 +45,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             echo json_encode($dati);
         } else {
-            // Se il file non esiste, restituisce un array vuoto
             echo json_encode([]);
         }
     } else {

@@ -8,13 +8,12 @@ body{
 }
 .titolo 
 {
-  margin-top: 5px;
-  position: relative;
+    position: relative;
     font-size: 150px;
     text-align: center;
     font-family: titolo;
     color:#52C5A6;
-    height: auto;
+    margin-bottom: -40px;
     /*text-shadow:
     -1px 0 #9FFFCB, // Ombra a sinistra 
     0 1px #9FFFCB,  // Ombra in basso 
@@ -22,43 +21,12 @@ body{
     0 -1px #9cdab7; //ombra in basso */
 
 }
-.titolo D
-{/*
-    text-shadow:1px 0 #52C5A6, // Ombra a sinistra 
-    0 1px #52C5A6,  // Ombra in basso 
-    1px 0 #52C5A6,  // Ombra a destra 
-    0 -1px #52C5A6; //ombra in basso */
 
-    color:#9FFFCB;
-}
-.nicknamebutton
-{
-  position:absolute; 
-  left: 10px; 
-  top:10px;
-  height: 75px;
-  width: 100px;
-  border-radius: 10%;
-  border: 4px solid #3C9B9B;
-  background-color: #77879C;
-  color:#ECB0E1;
-   
-}
 
-.dif{
-  margin-bottom: +10px;
-  position: relative;
-  font-size: 150px;
-  text-align: center;
-  font-family: titolo;
-  color: #3C9B9B;
-  font-size: 50px;
-  height: auto;
-}
-
-.gioca{
-  margin:0 auto; 
+.difficolta{
+margin:10px auto; 
   display:block;
+  text-align: center;
   position:relative; 
   height: 100px;
   width: 400px;
@@ -69,6 +37,13 @@ body{
   color: #ECB0E1;
   font-size: 40px;
 }
+.back
+{
+    position: fixed;
+    width: 50%;
+    bottom: 10px;
+    margin-left: 10px;
+}
 .nickname{
   margin-top: 10px;
   position: relative;
@@ -76,12 +51,16 @@ body{
   text-align: center;
   font-family: titolo;
   color: #3C9B9B;
+  font-size: 50px;
   height: auto;
 }
-.back
-{
-    position: fixed;
-    width: 50%;
-    bottom: 10px;
-    margin-left: 10px;
+.cat{
+  margin-bottom: +10px;
+  position: relative;
+  font-size: 150px;
+  text-align: center;
+  font-family: titolo;
+  color: #3C9B9B;
+  font-size: 50px;
+  height: auto;
 }

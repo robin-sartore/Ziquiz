@@ -1,0 +1,22 @@
+[
+    {"domanda": "Qual è la capitale della Spagna?", "risposta1": "Barcellona", "risposta2": "Valencia", "risposta3": "Bilbao", "rispostaGiusta": "Madrid"},
+    {"domanda": "Qual è il fiume che attraversa Londra?", "risposta1": "Tamigi", "risposta2": "Seine", "risposta3": "Danubio", "rispostaGiusta": "Tamigi"},
+    {"domanda": "Qual è la capitale dell'Australia?", "risposta1": "Sydney", "risposta2": "Melbourne", "risposta3": "Brisbane", "rispostaGiusta": "Canberra"},
+    {"domanda": "Qual è il monte più alto dell'Africa?", "risposta1": "Kilimangiaro", "risposta2": "Monti Rwenzori", "risposta3": "Monte Kenya", "rispostaGiusta": "Kilimangiaro"},
+    {"domanda": "Qual è il continente più piccolo?", "risposta1": "Africa", "risposta2": "Asia", "risposta3": "Europa", "rispostaGiusta": "Oceania"},
+    {"domanda": "Qual è la capitale della Grecia?", "risposta1": "Salonicco", "risposta2": "Creta", "risposta3": "Patrasso", "rispostaGiusta": "Atene"},
+    {"domanda": "Qual è la nazione insulare più grande del mondo?", "risposta1": "Giappone", "risposta2": "Gran Bretagna", "risposta3": "Filippine", "rispostaGiusta": "Australia"},
+    {"domanda": "Qual è il lago più grande del mondo?", "risposta1": "Lago Superiore", "risposta2": "Lago Vittoria", "risposta3": "Lago Baikal", "rispostaGiusta": "Lago Caspio"},
+    {"domanda": "Qual è la capitale del Canada?", "risposta1": "Toronto", "risposta2": "Vancouver", "risposta3": "Montréal", "rispostaGiusta": "Ottawa"},
+    {"domanda": "Qual è il mare più profondo del mondo?", "risposta1": "Mar Mediterraneo", "risposta2": "Mar Rosso", "risposta3": "Mar dei Caraibi", "rispostaGiusta": "Mar delle Filippine"},
+    {"domanda": "Quale paese ha il maggior numero di vulcani attivi?", "risposta1": "Stati Uniti", "risposta2": "Giappone", "risposta3": "Indonesia", "rispostaGiusta": "Indonesia"},
+    {"domanda": "Qual è la capitale della Turchia?", "risposta1": "Istanbul", "risposta2": "Smirne", "risposta3": "Adana", "rispostaGiusta": "Ankara"},
+    {"domanda": "Qual è il fiume più lungo d'Europa?", "risposta1": "Danubio", "risposta2": "Elba", "risposta3": "Reno", "rispostaGiusta": "Volga"},
+    {"domanda": "Quale isola è conosciuta come la 'Perla dell'Oceano Indiano'?", "risposta1": "Malta", "risposta2": "Sri Lanka", "risposta3": "Bali", "rispostaGiusta": "Malta"},
+    {"domanda": "Qual è la capitale della Norvegia?", "risposta1": "Bergen", "risposta2": "Stoccolma", "risposta3": "Oslo", "rispostaGiusta": "Oslo"},
+    {"domanda": "Qual è la montagna più alta dell'America?", "risposta1": "Denali", "risposta2": "Aconcagua", "risposta3": "Montana", "rispostaGiusta": "Denali"},
+    {"domanda": "Qual è il paese con il maggior numero di abitanti?", "risposta1": "India", "risposta2": "Stati Uniti", "risposta3": "Indonesia", "rispostaGiusta": "Cina"},
+    {"domanda": "Qual è la capitale della Svezia?", "risposta1": "Göteborg", "risposta2": "Malmö", "risposta3": "Uppsala", "rispostaGiusta": "Stoccolma"},
+    {"domanda": "Qual è il fiume che forma il confine tra Stati Uniti e Canada?", "risposta1": "Reno", "risposta2": "Mississippi", "risposta3": "Columbia", "rispostaGiusta": "Niagara"},
+    {"domanda": "Qual è il principale arcipelago della Norvegia?", "risposta1": "Isole Faroe", "risposta2": "Isole Svalbard", "risposta3": "Isole Lofoten", "rispostaGiusta": "Isole Lofoten"}
+]

@@ -1,0 +1,72 @@
+@font-face {
+    font-family: titolo;
+    src: url(../font/Modak-Regular.ttf);
+  }
+  
+body{
+    background-color: #52C5A6;
+}
+.titolo 
+{
+    position: relative;
+    font-size: 150px;
+    text-align: center;
+    font-family: titolo;
+    color:#3C9B9B;
+    margin-bottom: -40px;
+    /*text-shadow:
+    -1px 0 #9FFFCB, // Ombra a sinistra 
+    0 1px #9FFFCB,  // Ombra in basso 
+    1px 0 #9FFFCB,  // Ombra a destra 
+    0 -1px #9cdab7; //ombra in basso */
+
+}
+.risultato{
+    margin:10px auto; 
+    display:block;
+    text-align: center;
+    position:relative; 
+    height: 400px;
+    width: 600px;
+    top: center;
+    background-color: #52C5A6;
+    border:5px solid #77879C ;
+    color: #ECB0E1;
+    font-size: 40px;
+    }
+  
+.back
+{
+    position: fixed;
+    width: 50%;
+    bottom: 10px;
+    margin-left: 10px;
+}
+.nickname{
+  margin-top: 10px;
+  position: relative;
+  font-size: 150px;
+  text-align: center;
+  font-family: titolo;
+  color: #3C9B9B;
+  font-size: 50px;
+  height: auto;
+}
+
+.dif{
+  margin-bottom: +10px;
+  position: relative;
+  font-size: 150px;
+  text-align: center;
+  font-family: titolo;
+  color: #ECB0E1;
+  font-size: 50px;
+  height: auto;
+}
+.pt{
+    display: inline;
+}
+.totdomande{
+    display: inline;
+
+}

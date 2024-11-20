@@ -1,0 +1,61 @@
+@font-face {
+    font-family: titolo;
+    src: url(../font/Modak-Regular.ttf);
+  }
+  
+body{
+    background-color: rgba(236, 176, 225);
+    
+}
+.titolo 
+{
+    position: relative;
+    font-size: 150px;
+    text-align: center;
+    font-family: titolo;
+    color:#52C5A6;
+    /*text-shadow:
+    -1px 0 #9FFFCB, // Ombra a sinistra 
+    0 1px #9FFFCB,  // Ombra in basso 
+    1px 0 #9FFFCB,  // Ombra a destra 
+    0 -1px #9cdab7; //ombra in basso */
+
+}
+.nicknamesubmit
+{
+    margin:10px auto; 
+    display:block;
+    text-align: center;
+    position:relative; 
+    height: 50px;
+    width: 200px;
+    top: center+100px;
+    border-radius: 12px;
+    background-color: #3C9B9B;
+    border:5px solid #77879C ;
+    color: #ECB0E1; 
+    font-size: 20px;
+    
+}
+.nickname
+{
+    margin:0 auto; 
+    display:block;
+    text-align: center;
+    position:relative; 
+    height: 100px;
+    width: 400px;
+    top: center;
+    background-color:#3C9B9B ;
+    color: rgba(236, 176, 225); 
+    resize: none;
+    font-size: 50px;
+
+
+    
+}
+
+::placeholder {
+    color:  rgba(236, 176, 225); 
+    
+  }

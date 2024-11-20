@@ -1,0 +1,22 @@
+[
+    {"domanda": "Chi scoprì l'America nel 1492?", "risposta1": "Ferdinando Magellano", "risposta2": "Marco Polo", "risposta3": "Vasco da Gama", "rispostaGiusta": "Cristoforo Colombo"},
+    {"domanda": "Qual è stata la causa principale della Prima Guerra Mondiale?", "risposta1": "Espansione coloniale", "risposta2": "Nazionalismo", "risposta3": "Rivoluzione industriale", "rispostaGiusta": "Alleanze militari"},
+    {"domanda": "Chi fu l'imperatore romano durante la nascita del cristianesimo?", "risposta1": "Nerone", "risposta2": "Traiano", "risposta3": "Tiberio", "rispostaGiusta": "Nerone"},
+    {"domanda": "In quale anno è iniziata la Rivoluzione Francese?", "risposta1": "1789", "risposta2": "1792", "risposta3": "1783", "rispostaGiusta": "1789"},
+    {"domanda": "Quale movimento artistico è nato in Italia nel XVI secolo?", "risposta1": "Impressionismo", "risposta2": "Barocco", "risposta3": "Futurismo", "rispostaGiusta": "Rinascimento"},
+    {"domanda": "In quale anno fu fondata Roma?", "risposta1": "753 a.C.", "risposta2": "509 a.C.", "risposta3": "44 a.C.", "rispostaGiusta": "753 a.C."},
+    {"domanda": "Quale era il principale obiettivo della costruzione del muro di Berlino?", "risposta1": "Fermare l'immigrazione", "risposta2": "Proteggere i confini", "risposta3": "Difendere la Repubblica Democratica Tedesca", "rispostaGiusta": "Impedire la fuga verso ovest"},
+    {"domanda": "Chi fu il primo uomo a volare nello spazio?", "risposta1": "Buzz Aldrin", "risposta2": "John Glenn", "risposta3": "Neil Armstrong", "rispostaGiusta": "Yuri Gagarin"},
+    {"domanda": "Qual è stato il principale risultato della Rivoluzione Industriale?", "risposta1": "Aumento della popolazione", "risposta2": "Miglioramento delle tecnologie", "risposta3": "Sviluppo del comunismo", "rispostaGiusta": "Crescita dell'urbanizzazione"},
+    {"domanda": "Quale regno unificò l'Italia nel 1861?", "risposta1": "Regno di Sardegna", "risposta2": "Regno di Napoli", "risposta3": "Regno di Sicilia", "rispostaGiusta": "Regno di Sardegna"},
+    {"domanda": "Quale fu il principale leader della Rivoluzione Russa?", "risposta1": "Joseph Stalin", "risposta2": "Leon Trotsky", "risposta3": "Vladimir Lenin", "rispostaGiusta": "Vladimir Lenin"},
+    {"domanda": "Chi scrisse 'Il Principe'?", "risposta1": "Boccaccio", "risposta2": "Dante Alighieri", "risposta3": "Torquato Tasso", "rispostaGiusta": "Niccolò Machiavelli"},
+    {"domanda": "Quale nazione fu coinvolta nella Guerra del Vietnam?", "risposta1": "Cina", "risposta2": "Francia", "risposta3": "Giappone", "rispostaGiusta": "Stati Uniti"},
+    {"domanda": "Chi fu il primo presidente della Repubblica Italiana?", "risposta1": "Alcide De Gasperi", "risposta2": "Giovanni Gronchi", "risposta3": "Enrico De Nicola", "rispostaGiusta": "Enrico De Nicola"},
+    {"domanda": "Qual è stata la principale causa della Guerra di Secessione Americana?", "risposta1": "Espansione territoriale", "risposta2": "Diritto di voto", "risposta3": "Diritti degli stati", "rispostaGiusta": "Schiavismo"},
+    {"domanda": "Chi fu il leader della Germania nazista?", "risposta1": "Joseph Goebbels", "risposta2": "Hermann Göring", "risposta3": "Rudolf Hess", "rispostaGiusta": "Adolf Hitler"},
+    {"domanda": "Qual è stata la prima nazione a concedere il diritto di voto alle donne?", "risposta1": "Stati Uniti", "risposta2": "Francia", "risposta3": "Gran Bretagna", "rispostaGiusta": "Nuova Zelanda"},
+    {"domanda": "In quale anno è stata firmata la Costituzione degli Stati Uniti?", "risposta1": "1787", "risposta2": "1776", "risposta3": "1789", "rispostaGiusta": "1787"},
+    {"domanda": "Chi fu il fondatore dell'Impero Ottomano?", "risposta1": "Suleiman il Magnifico", "risposta2": "Osman I", "risposta3": "Mehmed II", "rispostaGiusta": "Osman I"},
+    {"domanda": "Chi fu il leader dei Bolscevichi durante la Rivoluzione Russa?", "risposta1": "Stalin", "risposta2": "Trotsky", "risposta3": "Lenin", "rispostaGiusta": "Lenin"}
+]
