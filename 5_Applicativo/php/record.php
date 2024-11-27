@@ -6,10 +6,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Salvataggio dei dati se sono presenti nome e punteggio
     if ($data && isset($data['nome']) && isset($data['punteggio']) && isset($data['categoria']) && isset($data['difficolta'])) {
         $nome = $data['nome'];
-        $punteggio = $data['punteggio'];
+        $punteggio = $data['punteggio']-10;
         $categoria = $data['categoria'];
         $difficolta = $data['difficolta'];
-        $filePath = '../json/' . $categoria . '_' . $difficolta . '_dati.json';
+        $filePath = '../json/record/' . $categoria . '_' . $difficolta . '_dati.json';
 
         // Controlla se il file esiste
         if (!file_exists($filePath)) {
@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $difficolta = $_GET['difficolta'] ?? null;
 
     if ($categoria && $difficolta) {
-        $filePath = '../json/' . $categoria . '_' . $difficolta . '_dati.json';
+        $filePath = '../json/record/' . $categoria . '_' . $difficolta . '_dati.json';
         if (file_exists($filePath)) {
             $dati = json_decode(file_get_contents($filePath), true);
 

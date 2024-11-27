@@ -29,7 +29,7 @@ function backcat() {
 }
 
 console.log('../json/'+categoria+difficolta+'.json');
-fetch('http://www.samtinfo.ch/i22RobinSartore/Ziquiz/json/'+categoria+difficolta+'.json')
+fetch('https://samtinfo.ch/i22RobinSartore/Ziquiz/json/'+categoria+difficolta+'.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('Errore nell\'apertura');
@@ -226,25 +226,4 @@ function salvaPunteggio() {
     });
 }
 
-/*
 
-function recuperaNickname() {
-    fetch('../php/nickname.php', {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.status === 'success') {
-            document.getElementById('nicknamefinal').innerHTML = `Benvenuto, ${data.nickname}!`;
-        } else {
-            alert(data.message);
-        }
-    })
-    .catch(error => {
-        console.error('Errore nella richiesta:', error);
-    });
-}
-*/

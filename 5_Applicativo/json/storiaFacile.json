@@ -1,12 +1,12 @@
 [
-    {"domanda": "Chi era il primo presidente degli Stati Uniti?", "risposta1": "Abraham Lincoln", "risposta2": "Thomas Jefferson", "risposta3": "John Adams", "rispostaGiusta": "George Washington"},
-    {"domanda": "In che anno è caduto il muro di Berlino?", "risposta1": "1985", "risposta2": "1991", "risposta3": "1993", "rispostaGiusta": "1989"},
-    {"domanda": "Quale antica civiltà costruì le piramidi?", "risposta1": "Romani", "risposta2": "Greci", "risposta3": "Fenici", "rispostaGiusta": "Egizi"},
-    {"domanda": "Chi scoprì l'America?", "risposta1": "Ferdinando Magellano", "risposta2": "Marco Polo", "risposta3": "Amerigo Vespucci", "rispostaGiusta": "Cristoforo Colombo"},
-    {"domanda": "Quale guerra è nota come la Grande Guerra?", "risposta1": "Guerra Civile Americana", "risposta2": "Guerra di Secessione", "risposta3": "Guerra Franco-Prussiana", "rispostaGiusta": "Prima Guerra Mondiale"},
-    {"domanda": "Chi fu il faraone famoso per la sua tomba intatta?", "risposta1": "Cleopatra", "risposta2": "Ramses II", "risposta3": "Nefertiti", "rispostaGiusta": "Tutankhamon"},
-    {"domanda": "Quale impero era governato da Augusto?", "risposta1": "Impero Persiano", "risposta2": "Impero Bizantino", "risposta3": "Impero Ottomano", "rispostaGiusta": "Impero Romano"},
-    {"domanda": "Chi scrisse la 'Divina Commedia'?", "risposta1": "Boccaccio", "risposta2": "Torquato Tasso", "risposta3": "Petrarca", "rispostaGiusta": "Dante Alighieri"},
-    {"domanda": "Quale evento ha segnato l'inizio della Rivoluzione Francese?", "risposta1": "La dichiarazione dei diritti", "risposta2": "L'esecuzione di Luigi XVI", "risposta3": "La guerra contro la Gran Bretagna", "rispostaGiusta": "La presa della Bastiglia"},
-    {"domanda": "Chi fu il leader della lotta per i diritti civili negli Stati Uniti?", "risposta1": "Nelson Mandela", "risposta2": "Malcolm X", "risposta3": "Barack Obama", "rispostaGiusta": "Martin Luther King Jr."}
+    {"domanda": "Chi era il primo imperatore romano?", "risposta1": "Nerone", "risposta2": "Caligola", "risposta3": "Traiano", "rispostaGiusta": "Augusto"},
+    {"domanda": "In quale anno è caduto l'Impero Romano d'Occidente?", "risposta1": "395 d.C.", "risposta2": "300 d.C.", "risposta3": "1453 d.C.", "rispostaGiusta": "476 d.C."},
+    {"domanda": "Chi ha scoperto l'America?", "risposta1": "Vasco da Gama", "risposta2": "Magellano", "risposta3": "Américo Vespúcio", "rispostaGiusta": "Cristoforo Colombo"},
+    {"domanda": "Chi ha scritto la 'Divina Commedia'?", "risposta1": "Petrarca", "risposta2": "Boccaccio", "risposta3": "Ariosto", "rispostaGiusta": "Dante Alighieri"},
+    {"domanda": "Quando è stata scoperta l'America?", "risposta1": "1402", "risposta2": "1501", "risposta3": "1489", "rispostaGiusta": "1492"},
+    {"domanda": "Quale era il soprannome di Napoleone Bonaparte?", "risposta1": "Il Pacificatore", "risposta2": "Il Condottiero", "risposta3": "L'Imperatore del Sole", "rispostaGiusta": "Il piccolo Corso"},
+    {"domanda": "Chi è stato il primo presidente degli Stati Uniti?", "risposta1": "Abraham Lincoln", "risposta2": "Thomas Jefferson", "risposta3": "John Adams", "rispostaGiusta": "George Washington"},
+    {"domanda": "Quale paese ha iniziato la Rivoluzione Industriale?", "risposta1": "Francia", "risposta2": "Germania", "risposta3": "Italia", "rispostaGiusta": "Inghilterra"},
+    {"domanda": "Chi era il re di Francia durante la Rivoluzione Francese?", "risposta1": "Luigi XIV", "risposta2": "Carlo X", "risposta3": "Francesco II", "rispostaGiusta": "Luigi XVI"},
+    {"domanda": "Chi ha inventato la stampa?", "risposta1": "Leonardo da Vinci", "risposta2": "Michelangelo", "risposta3": "Donatello", "rispostaGiusta": "Gutenberg"}
 ]

@@ -17,3 +17,7 @@ function nickname(){
 */
 //da provare a risolvere
 }
+function leaderboard(){
+  close();
+  var leader=window.open("sceltaLeaderboard.html")
+}

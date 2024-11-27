@@ -44,6 +44,19 @@ body{
   color:#ECB0E1;
    
 }
+.leaderboard
+{
+    position:absolute; 
+    right: 10px; 
+    top:10px;
+    height: 75px;
+    width: 100px;
+    border-radius: 10%;
+    border: 4px solid #3C9B9B;
+    background-color: #77879C;
+    color:#ECB0E1;
+     
+}
 
 .dif{
   margin-bottom: +10px;

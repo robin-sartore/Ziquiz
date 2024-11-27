@@ -24,7 +24,7 @@ function refreshpt() {
 
 function backcat() {
     close();
-    var pag = window.open("difficolta.html");
+    var pag = window.open("Ziquiz.html");
 }
 function mostraDatiSalvati() {
     const categoria = sessionStorage.getItem("2");
@@ -41,20 +41,32 @@ function mostraDatiSalvati() {
             'Content-Type': 'application/json'
         }
     })
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`Errore nella risposta: ${response.status}`);
+        }
+        return response.text(); // Recupera la risposta come testo
+    })
     .then(data => {
-        console.log('Dati salvati:', data);
-
-        const container = document.getElementById('datiSalvati');
-        container.innerHTML = ''; // Svuota il contenitore
-
-        data.forEach(record => {
-            const elemento = document.createElement('div');
-            elemento.textContent = `Nome: ${record.nome}, Punteggio: ${record.punteggio}`;
-            container.appendChild(elemento);
-        });
+        try {
+            const jsonData = JSON.parse(data); // Tenta di fare il parsing come JSON
+            console.log('Dati salvati:', jsonData);
+    
+            const container = document.getElementById('datiSalvati');
+            container.innerHTML = ''; // Svuota il contenitore
+    
+            jsonData.forEach(record => {
+                const elemento = document.createElement('div');
+                elemento.textContent = `Nome: ${record.nome}, Punteggio: ${record.punteggio}`;
+                container.appendChild(elemento);
+            });
+        } catch (error) {
+            console.error('Errore nel parsing della risposta JSON:', error);
+            console.error('Risposta ricevuta:', data);
+        }
     })
     .catch(error => {
         console.error('Errore nella richiesta:', error);
     });
+    
 }
