@@ -26,15 +26,20 @@ function backcat() {
     close();
     var pag = window.open("Ziquiz.html");
 }
+setTimeout(mostraDatiSalvati, 1000); // Aspetta 1 secondo prima di mostrare i dati
+
+// Funzione per recuperare i dati (GET) e mostrarli
 function mostraDatiSalvati() {
     const categoria = sessionStorage.getItem("2");
     const difficolta = sessionStorage.getItem("3");
 
+    // Controllo se categoria o difficoltà non sono definiti
     if (!categoria || !difficolta) {
         console.error("Errore: categoria o difficoltà mancanti.");
         return;
     }
 
+    // Esegui la richiesta GET
     fetch(`../php/record.php?categoria=${categoria}&difficolta=${difficolta}`, {
         method: 'GET',
         headers: {
@@ -55,6 +60,7 @@ function mostraDatiSalvati() {
             const container = document.getElementById('datiSalvati');
             container.innerHTML = ''; // Svuota il contenitore
     
+            // Mostra i dati
             jsonData.forEach(record => {
                 const elemento = document.createElement('div');
                 elemento.textContent = `Nome: ${record.nome}, Punteggio: ${record.punteggio}`;
@@ -68,5 +74,6 @@ function mostraDatiSalvati() {
     .catch(error => {
         console.error('Errore nella richiesta:', error);
     });
-    
 }
+
+

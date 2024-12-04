@@ -4,14 +4,14 @@ function back(){
     var pag=window.open("Ziquiz.html");
     
 }
-function personale(){
+function Personale(){
     close();
     var pag=window.open("leaderboardpersonale.html");
 } 
-function generale(){
-    const prendicategoria = document.getElementById("categoria"+x).innerHTML;
-    sessionStorage.setItem("leadercat",prendicategoria);
-
+function Generale(){
+    close();
+    var pag=window.open("categorieleader.html");
+    
 
     
    

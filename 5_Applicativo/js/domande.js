@@ -209,17 +209,22 @@ function salvaPunteggio() {
         difficolta: difficolta
     };
 
-    // Invia i dati a PHP usando fetch
-    fetch('../php/record.php', {
-        method: 'POST', // metodo di invio
+     // Invia la richiesta POST
+     fetch('../php/record.php', {
+        method: 'POST',
         headers: {
-            'Content-Type': 'application/json'  // Tipo di contenuto
+            'Content-Type': 'application/json'
         },
-        body: JSON.stringify(dati)  // Dati da inviare, convertiti in formato JSON
+        body: JSON.stringify(dati)  // Invia i dati come JSON
     })
-    .then(response => response.json())  // Assumiamo che il server ritorni una risposta JSON
+    .then(response => response.json())
     .then(data => {
-        console.log('Dati salvati con successo', data);
+        console.log('Risposta dal server:', data);
+        if (data.status === 'success') {
+            alert("Punteggio salvato con successo!");
+        } else {
+            alert("Errore nel salvataggio del punteggio: " + data.message);
+        }
     })
     .catch(error => {
         console.error('Errore nella richiesta:', error);

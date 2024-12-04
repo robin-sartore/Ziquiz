@@ -3,30 +3,43 @@
 
 // Leggi i dati dalla richiesta
 $request = json_decode(file_get_contents("php://input"), true);
-$name = $request['name'] ?? '';
+$name = $request['name'] ?? ''; // Otteniamo il nome dalla richiesta, se non presente sarà vuoto
 
 // Controlla che il nome non sia vuoto
 if (empty($name)) {
-    echo json_encode([]); // Risposta vuota se il nome è vuoto
+    echo json_encode(['status' => 'error', 'message' => 'Nome non specificato']); // Se non c'è il nome, rispondi con errore
     exit;
 }
 
 $results = [];
-$directory = __DIR__ . '../json/record/'; // Directory con i file JSON
-$files = glob($directory . '*.json'); // Ottieni tutti i file JSON
+$directory = __DIR__ . '/../json/record/'; // Percorso della cartella dei file JSON
+$files = glob($directory . '*.json'); // Otteniamo tutti i file JSON
 
+// Itera attraverso tutti i file
 foreach ($files as $file) {
-    $jsonData = json_decode(file_get_contents($file), true);
+    // Estrai il nome del file senza il percorso e l'estensione
+    $fileName = basename($file, '.json');
+    // Dividi il nome del file per ottenere categoria e difficoltà
+    $fileParts = explode('_', $fileName);
+    $categoria = $fileParts[0] ?? '';
+    $difficolta = $fileParts[1] ?? '';
+
+    // Carica il contenuto di ciascun file JSON
+    $jsonData = json_decode(file_get_contents($file), true); 
     if (is_array($jsonData)) {
         foreach ($jsonData as $row) {
+            // Controlla se il nome esiste nel record e se corrisponde
             if (isset($row['nome']) && stripos($row['nome'], $name) !== false) {
-                $results[] = $row;
+                // Aggiungi anche la categoria e la difficoltà al record
+                $row['categoria'] = $categoria;
+                $row['difficolta'] = $difficolta;
+                $results[] = $row; // Se corrisponde, aggiungi il record ai risultati
             }
         }
     }
 }
 
-// Restituisci i risultati in formato JSON
+// Rispondi con i risultati in formato JSON
 header('Content-Type: application/json');
 echo json_encode($results);
 ?>

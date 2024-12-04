@@ -1,61 +1,84 @@
 <?php
-// Ottiene i dati inviati dal JavaScript
-$data = json_decode(file_get_contents('php://input'), true);
+// Abilitare la visualizzazione degli errori per il debug
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Pragma: no-cache");
+header("Expires: Thu, 01 Jan 1970 00:00:00 GMT");
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Salvataggio dei dati se sono presenti nome e punteggio
+// Funzione per ottenere il percorso del file JSON
+function getFilePath($categoria, $difficolta) {
+    return '../json/record/' . $categoria . '_' . $difficolta . '_dati.json';
+}
+
+// Se Ã¨ una richiesta POST (per aggiungere punteggi)
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $data = json_decode(file_get_contents('php://input'), true); // Prende i dati dal corpo della richiesta
+
+    // Controlla se i dati necessari sono presenti
     if ($data && isset($data['nome']) && isset($data['punteggio']) && isset($data['categoria']) && isset($data['difficolta'])) {
         $nome = $data['nome'];
-        $punteggio = $data['punteggio']-10;
+        $punteggio = $data['punteggio'];
         $categoria = $data['categoria'];
         $difficolta = $data['difficolta'];
-        $filePath = '../json/record/' . $categoria . '_' . $difficolta . '_dati.json';
 
-        // Controlla se il file esiste
+        // Percorso del file JSON
+        $filePath = getFilePath($categoria, $difficolta);
+
+        // Se il file non esiste, crealo con un array vuoto
         if (!file_exists($filePath)) {
-            // Se il file non esiste, crea il file con un array vuoto
-            file_put_contents($filePath, json_encode([]));  // Crea il file vuoto
+            file_put_contents($filePath, json_encode([]));  // Crea un file vuoto
         }
 
-        // Legge il contenuto esistente del file
+        // Leggi i dati esistenti
         $datiCorrenti = json_decode(file_get_contents($filePath), true);
 
-        // Aggiungi il nuovo record alla lista
-        $datiCorrenti[] = ['nome' => $nome, 'punteggio' => $punteggio];
+        // Aggiungi il nuovo punteggio al file JSON
+        $datiCorrenti[] = [
+            'nome' => $nome,
+            'punteggio' => $punteggio
+        ];
 
-        // Ordina la lista in ordine decrescente per punteggio
-        usort($datiCorrenti, function ($a, $b) {
-            return $b['punteggio'] - $a['punteggio'];
-        });
+        // Salva i dati nel file JSON
+        $result = file_put_contents($filePath, json_encode($datiCorrenti, JSON_PRETTY_PRINT));
 
-        // Salva la lista ordinata nel file JSON
-        file_put_contents($filePath, json_encode($datiCorrenti, JSON_PRETTY_PRINT));
-
-        echo json_encode(['status' => 'success', 'message' => 'Leaderboard aggiornata correttamente']);
+        // Risposta JSON
+        if ($result === false) {
+            echo json_encode(['status' => 'error', 'message' => 'Errore nella scrittura del file']);
+        } else {
+            echo json_encode(['status' => 'success', 'message' => 'Punteggio salvato correttamente']);
+        }
     } else {
-        echo json_encode(['status' => 'error', 'message' => 'Dati non validi']);
+        // Se i dati sono incompleti
+        echo json_encode(['status' => 'error', 'message' => 'Dati mancanti o non validi']);
     }
-} elseif ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    $categoria = $_GET['categoria'] ?? null;
-    $difficolta = $_GET['difficolta'] ?? null;
+}
 
+// Se Ã¨ una richiesta GET (per recuperare i punteggi)
+if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+    $categoria = isset($_GET['categoria']) ? $_GET['categoria'] : '';
+    $difficolta = isset($_GET['difficolta']) ? $_GET['difficolta'] : '';
+
+    // Se i parametri sono validi
     if ($categoria && $difficolta) {
-        $filePath = '../json/record/' . $categoria . '_' . $difficolta . '_dati.json';
-        if (file_exists($filePath)) {
-            $dati = json_decode(file_get_contents($filePath), true);
+        $filePath = getFilePath($categoria, $difficolta);
 
-            // Ordina la lista in ordine decrescente per punteggio
-            usort($dati, function ($a, $b) {
+        // Se il file esiste, carica i dati
+        if (file_exists($filePath)) {
+            $datiCorrenti = json_decode(file_get_contents($filePath), true);
+
+            // Ordina i dati per punteggio, decrescente
+            usort($datiCorrenti, function($a, $b) {
                 return $b['punteggio'] - $a['punteggio'];
             });
 
-            echo json_encode($dati);
+            // Rispondi con i dati in formato JSON
+            echo json_encode($datiCorrenti);
         } else {
-            // Se il file non esiste, restituisce un array vuoto
-            echo json_encode([]);
+            echo json_encode(['status' => 'error', 'message' => 'File non trovato']);
         }
     } else {
-        echo json_encode(['status' => 'error', 'message' => 'Parametri mancanti']);
+        echo json_encode(['status' => 'error', 'message' => 'Categoria o difficoltÃ  mancanti']);
     }
 }
 ?>
