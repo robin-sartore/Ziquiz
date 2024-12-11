@@ -82,6 +82,19 @@ body{
   color: #ECB0E1;
   font-size: 40px;
 }
+.crea{
+  margin:0 auto; 
+  display:block;
+  position:relative; 
+  height: 100px;
+  width: 400px;
+  top: center;
+  border-radius: 12px;
+  background-color: #3C9B9B;
+  border:5px solid #77879C ;
+  color: #ECB0E1;
+  font-size: 40px;
+}
 .nickname{
   margin-top: 10px;
   position: relative;

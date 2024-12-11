@@ -1,12 +1,12 @@
 [
     {"domanda": "Qual è la capitale della Francia?", "risposta1": "Lione", "risposta2": "Marsiglia", "risposta3": "Nizza", "rispostaGiusta": "Parigi"},
     {"domanda": "Qual è il fiume più lungo del mondo?", "risposta1": "Reno", "risposta2": "Mississippi", "risposta3": "Yangtze", "rispostaGiusta": "Nilo"},
-    {"domanda": "Quale continente è il più popoloso?", "risposta1": "Africa", "risposta2": "America", "risposta3": "Europa", "rispostaGiusta": "Asia"},
-    {"domanda": "Qual è la capitale dell'Italia?", "risposta1": "Milano", "risposta2": "Torino", "risposta3": "Napoli", "rispostaGiusta": "Roma"},
-    {"domanda": "Qual è l'oceano più grande del mondo?", "risposta1": "Atlantico", "risposta2": "Indiano", "risposta3": "Artico", "rispostaGiusta": "Pacifico"},
     {"domanda": "Qual è il monte più alto del mondo?", "risposta1": "K2", "risposta2": "Kangchenjunga", "risposta3": "Lhotse", "rispostaGiusta": "Everest"},
-    {"domanda": "Qual è la capitale del Giappone?", "risposta1": "Osaka", "risposta2": "Kyoto", "risposta3": "Hiroshima", "rispostaGiusta": "Tokyo"},
     {"domanda": "Quale paese ha la forma di uno stivale?", "risposta1": "Spagna", "risposta2": "Francia", "risposta3": "Grecia", "rispostaGiusta": "Italia"},
+    {"domanda": "Qual è la capitale del Giappone?", "risposta1": "Osaka", "risposta2": "Kyoto", "risposta3": "Hiroshima", "rispostaGiusta": "Tokyo"},
+    {"domanda": "Qual è il deserto più grande del mondo?", "risposta1": "Deserto di Gobi", "risposta2": "Deserto di Kalahari", "risposta3": "Deserto dell'Atacama", "rispostaGiusta": "Deserto del Sahara"},
+    {"domanda": "Quale continente è il più popoloso?", "risposta1": "Africa", "risposta2": "America", "risposta3": "Europa", "rispostaGiusta": "Asia"},
     {"domanda": "Qual è la capitale della Germania?", "risposta1": "Monaco", "risposta2": "Francoforte", "risposta3": "Colonia", "rispostaGiusta": "Berlino"},
-    {"domanda": "Qual è il deserto più grande del mondo?", "risposta1": "Deserto di Gobi", "risposta2": "Deserto di Kalahari", "risposta3": "Deserto dell'Atacama", "rispostaGiusta": "Deserto del Sahara"}
+    {"domanda": "Qual è l'oceano più grande del mondo?", "risposta1": "Atlantico", "risposta2": "Indiano", "risposta3": "Artico", "rispostaGiusta": "Pacifico"},
+    {"domanda": "Qual è la capitale dell'Italia?", "risposta1": "Milano", "risposta2": "Torino", "risposta3": "Napoli", "rispostaGiusta": "Roma"}
 ]

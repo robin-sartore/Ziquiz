@@ -5,8 +5,15 @@ function back(){
     
 }
 function Personale(){
-    close();
-    var pag=window.open("leaderboardpersonale.html");
+    nick = sessionStorage.getItem("1");
+    if(nick==""||nick==null){
+      alert("Senza Accesso non è possibile vedere questa pagina");
+    }
+    else{
+        close();
+        var pag=window.open("leaderboardpersonale.html");
+    }
+   
 } 
 function Generale(){
     close();

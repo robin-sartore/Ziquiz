@@ -1,0 +1,22 @@
+[
+    {"domanda": "Qual è l'elemento chimico con simbolo 'O'?", "risposta1": "Oro", "risposta2": "Osmio", "risposta3": "Oganesson", "rispostaGiusta": "Ossigeno"},
+    {"domanda": "Quale pianeta è il più vicino al Sole?", "risposta1": "Venere", "risposta2": "Marte", "risposta3": "Terra", "rispostaGiusta": "Mercurio"},
+    {"domanda": "Qual è la forza che ci tiene ancorati alla Terra?", "risposta1": "Attrito", "risposta2": "Forza elettromagnetica", "risposta3": "Pressione", "rispostaGiusta": "Gravità"},
+    {"domanda": "Qual è l'animale terrestre più veloce?", "risposta1": "Leone", "risposta2": "Gazzella", "risposta3": "Elefante", "rispostaGiusta": "Ghepardo"},
+    {"domanda": "Qual è il gas più abbondante nell'atmosfera terrestre?", "risposta1": "Ossigeno", "risposta2": "Anidride carbonica", "risposta3": "Idrogeno", "rispostaGiusta": "Azoto"},
+    {"domanda": "Qual è il nome scientifico dell'uomo?", "risposta1": "Homo habilis", "risposta2": "Homo erectus", "risposta3": "Homo neanderthalensis", "rispostaGiusta": "Homo sapiens"},
+    {"domanda": "Qual è il pianeta più grande del sistema solare?", "risposta1": "Saturno", "risposta2": "Urano", "risposta3": "Nettuno", "rispostaGiusta": "Giove"},
+    {"domanda": "Qual è l'organo principale del sistema nervoso?", "risposta1": "Cuore", "risposta2": "Rene", "risposta3": "Fegato", "rispostaGiusta": "Cervello"},
+    {"domanda": "Come si chiama il processo con cui le piante producono energia?", "risposta1": "Respirazione cellulare", "risposta2": "Ossidazione", "risposta3": "Fermentazione", "rispostaGiusta": "Fotosintesi"},
+    {"domanda": "Qual è la velocità della luce nel vuoto?", "risposta1": "300.000 km/s", "risposta2": "3.000 km/s", "risposta3": "30.000 km/s", "rispostaGiusta": "299.792 km/s"},
+    {"domanda": "Qual è l'unità di misura della forza?", "risposta1": "Pascal", "risposta2": "Watt", "risposta3": "Joule", "rispostaGiusta": "Newton"},
+    {"domanda": "Quale pianeta ha il maggior numero di satelliti naturali?", "risposta1": "Urano", "risposta2": "Nettuno", "risposta3": "Giove", "rispostaGiusta": "Saturno"},
+    {"domanda": "Come si chiama il ciclo dell'acqua in natura?", "risposta1": "Ciclo dell'ossigeno", "risposta2": "Ciclo del carbonio", "risposta3": "Ciclo del fosforo", "rispostaGiusta": "Ciclo idrologico"},
+    {"domanda": "Quale parte del fiore produce il polline?", "risposta1": "Sepali", "risposta2": "Petali", "risposta3": "Stigma", "rispostaGiusta": "Stami"},
+    {"domanda": "Come si chiama la proteina che trasporta ossigeno nel sangue?", "risposta1": "Globulina", "risposta2": "Miosina", "risposta3": "Albumina", "rispostaGiusta": "Emoglobina"},
+    {"domanda": "Quale strumento misura la pressione atmosferica?", "risposta1": "Igrometro", "risposta2": "Altimetro", "risposta3": "Termometro", "rispostaGiusta": "Barometro"},
+    {"domanda": "Qual è il pH neutro?", "risposta1": "6", "risposta2": "8", "risposta3": "5", "rispostaGiusta": "7"},
+    {"domanda": "Qual è il primo elemento della tavola periodica?", "risposta1": "Elio", "risposta2": "Litio", "risposta3": "Ossigeno", "rispostaGiusta": "Idrogeno"},
+    {"domanda": "Qual è il telescopio spaziale che ha permesso grandi scoperte?", "risposta1": "Kepler", "risposta2": "Spitzer", "risposta3": "James Webb", "rispostaGiusta": "Hubble"},
+    {"domanda": "Quale gas viene emesso dalle auto a combustione?", "risposta1": "Azoto", "risposta2": "Metano", "risposta3": "Ozono", "rispostaGiusta": "Anidride carbonica"}
+]

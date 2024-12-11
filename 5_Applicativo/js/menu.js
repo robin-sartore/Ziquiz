@@ -1,21 +1,28 @@
 function gioca(){
+  nick = sessionStorage.getItem("1");
+  if(nick==""||nick==null){
+    alert("Senza Accesso non verra salvato nessun record");
+  }
     close();
     var cat=window.open("categorie.html");
     
 }
+function crea(){
+  nick = sessionStorage.getItem("1");
+  if(nick==""||nick==null){
+    alert("Senza Accesso non puoi creare quiz");
+  }
+  else{
+    close();
+    var cat=window.open("crea.html");
+  }
+    
+}
 function nickname(){
+  
     close();
     var cat=window.open("nickname.html");
-  /*  var w = screen.availWidth;
-    var h = screen.availHeight;
-    var w5 = w*0.5;
-    var h75 = h*0.75;
-    var w25 = w*0.25;
-    var h15 = h*0.15;
-    var windownickname=window.open("nickname.html","","width="+w5+",height="+h75);
-    windownickname.moveTo(w25, h15);
-*/
-//da provare a risolvere
+  
 }
 function leaderboard(){
   close();

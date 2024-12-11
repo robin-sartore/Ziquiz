@@ -21,19 +21,29 @@ body{
     0 -1px #9cdab7; //ombra in basso */
 
 }
-.risultato{
-    margin:10px auto; 
-    display:block;
+.risultato {
+    margin: 10px auto; 
+    display: block;
     text-align: center;
-    position:relative; 
-    height: 400px;
+    position: relative; 
+    height: auto;  /* Cambia da una misura fissa a 'auto' */
     width: 600px;
     top: center;
     background-color: #52C5A6;
-    border:5px solid #77879C ;
+    border: 5px solid #77879C;
     color: #ECB0E1;
     font-size: 40px;
-    }
+    padding: 20px;
+    box-sizing: border-box;  /* Assicura che il padding non influisca sulle dimensioni del contenitore */
+}
+
+.datiSalvati {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 20px;
+    max-height: 300px; /* Limita l'altezza se i dati sono troppo lunghi */
+    overflow-y: auto; /* Aggiungi lo scroll verticale se il contenuto è troppo lungo */
+}
   
 .back
 {
@@ -69,4 +79,7 @@ body{
 .totdomande{
     display: inline;
 
+}
+.nickname{
+    display: inline;
 }

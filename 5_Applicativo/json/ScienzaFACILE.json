@@ -1,0 +1,12 @@
+[
+    {"domanda": "Qual è il pianeta più vicino al Sole?", "risposta1": "Venere", "risposta2": "Terra", "risposta3": "Marte", "rispostaGiusta": "Mercurio"},
+    {"domanda": "Qual è il gas più abbondante nell'atmosfera terrestre?", "risposta1": "Ossigeno", "risposta2": "Argon", "risposta3": "Anidride carbonica", "rispostaGiusta": "Azoto"},
+    {"domanda": "Qual è l'unità di misura della corrente elettrica?", "risposta1": "Volt", "risposta2": "Watt", "risposta3": "Ohm", "rispostaGiusta": "Ampere"},
+    {"domanda": "Qual è lo stato dell'acqua a 0 gradi Celsius?", "risposta1": "Liquido", "risposta2": "Vapore", "risposta3": "Gas", "rispostaGiusta": "Solido"},
+    {"domanda": "Qual è il metallo più leggero?", "risposta1": "Ferro", "risposta2": "Alluminio", "risposta3": "Titanio", "rispostaGiusta": "Litio"},
+    {"domanda": "Quale organo pompa il sangue nel corpo umano?", "risposta1": "Polmoni", "risposta2": "Fegato", "risposta3": "Cervello", "rispostaGiusta": "Cuore"},
+    {"domanda": "Qual è la molecola dell'acqua?", "risposta1": "CO2", "risposta2": "O2", "risposta3": "CH4", "rispostaGiusta": "H2O"},
+    {"domanda": "Quale pianeta è noto per i suoi anelli?", "risposta1": "Giove", "risposta2": "Urano", "risposta3": "Nettuno", "rispostaGiusta": "Saturno"},
+    {"domanda": "Qual è l'organo più grande del corpo umano?", "risposta1": "Cuore", "risposta2": "Fegato", "risposta3": "Polmoni", "rispostaGiusta": "Pelle"},
+    {"domanda": "Che tipo di energia utilizza una batteria?", "risposta1": "Termica", "risposta2": "Luminosa", "risposta3": "Cinetica", "rispostaGiusta": "Chimica"}
+]

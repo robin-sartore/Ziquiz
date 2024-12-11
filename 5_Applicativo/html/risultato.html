@@ -16,10 +16,11 @@
 <script src="../js/menu.js"></script>
 <script src="../js/nickname.js"></script>
 <script src="../js/categorie.js"></script>
+<script src="../js/difficolta.js"></script>
 <script src="../js/risultato.js"></script>
 </head>
-<body onload="refresh(),refreshCat(),refreshpt(), onload=mostraDatiSalvati()">
-    <div id="nicknamefinal" class="nickname"></div>
+<body onload="refresh(),refreshCat(),refreshpt(),refreshdif()">
+
     
         <div class="titolo" id="cat">
 
@@ -30,12 +31,17 @@
         </div>
 
     <br>
-<div class="risultato">PUNTEGGIO: 
+<div class="risultato">
+    BRAVO
+    <div class="nickname" id="nicknamefinal"></div>!
+    <br>
+    PUNTEGGIO: 
     <div class="pt" id="risultato"></div>
-     <br>HAI RISPOSTO A 
+     <br>
+     HAI RISPOSTO A 
+     <br>
      <div class="totdomande"  id="totdomande"></div> 
      DOMANDE CORRETTE 
-  <div id="datiSalvati"></div>
 </div>  
 <div class="back" onclick="backcat()">
         <img src="../immagini/back.png" width="50px">
