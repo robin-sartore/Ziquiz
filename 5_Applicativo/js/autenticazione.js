@@ -105,7 +105,7 @@ if (logoutButton) {
             sessionStorage.setItem("1", "");
           
     
-            window.location.href = "../html/nickname.html";  // Redirige alla pagina di login
+            window.location.href = "../html/accesso.html";  // Redirige alla pagina di login
         } catch (error) {
             console.error("Errore nel logout:", error.message);
         }

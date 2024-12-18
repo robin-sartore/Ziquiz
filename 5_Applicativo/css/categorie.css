@@ -1,3 +1,22 @@
+@media (max-width: 768px) {
+  .categorie-container {
+      flex-wrap: wrap; /* Permette al contenuto di adattarsi */
+      justify-content: center;
+  }
+
+  .categorie-bottone {
+      font-size: 18px; /* Adatta il testo */
+      padding: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .categorie-bottone {
+      font-size: 14px; /* Font più piccolo */
+      padding: 8px 12px;
+  }
+}
+
 @font-face {
     font-family: titolo;
     src: url(../font/Modak-Regular.ttf);

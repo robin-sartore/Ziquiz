@@ -1,3 +1,33 @@
+@media (max-width: 768px) {
+  .domanda-container {
+      padding: 15px; /* Aggiungi spazio */
+      font-size: 16px; /* Riduci testo */
+  }
+
+  .risposte {
+      flex-direction: column; /* Disposizione verticale */
+  }
+
+  .risposta-bottone {
+      margin: 5px 0;
+  }
+  .risposta{
+    display:none;
+  }
+}
+
+@media (max-width: 480px) {
+  .domanda-container {
+      font-size: 14px; /* Testo più piccolo */
+  }
+  .risposta-bottone {
+      padding: 8px 10px;
+  }
+  .risposta{
+    display:none;
+  }
+}
+
 @font-face {
     font-family: titolo;
     src: url(../font/Modak-Regular.ttf);
@@ -31,7 +61,7 @@ margin:10px auto;
   height: 200px;
   width: 600px;
   top: center;
-  background-color: #52C5A6;
+  background-color: #bafcea;
   border:5px solid #77879C ;
   color: #ECB0E1;
   font-size: 40px;

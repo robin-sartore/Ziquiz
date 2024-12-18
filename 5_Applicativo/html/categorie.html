@@ -15,9 +15,10 @@
   <link rel="icon" type="image/x-icon" href="image/favicon.ico">
 <script src="../js/categorie.js"></script>
 <script src="../js/nickname.js"></script>
+<script src="../js/difficolta.js"></script>
 
 </head>
-<body onload="refresh()">
+<body onload="refresh(),prendiQuiz()">
     <div id="nicknamefinal" class="nickname"></div>
     <div class="titolo">
         CATEGORIE
@@ -26,6 +27,8 @@
     <button id="categoria1" class="categoria" onclick="categoria(1), dif()">Geografia</button>
     <button id="categoria2" class="categoria" onclick="categoria(2), dif()">Storia</button>
     <button id="categoria3" class="categoria" onclick="categoria(3),dif()">Scienza</button>
+    <div id="quiz-container"></div> <!-- Contenitore per i quiz -->
+
     <div class="back" onclick="back()">
         <img src="../immagini/back.png" width="50px">
     </div>

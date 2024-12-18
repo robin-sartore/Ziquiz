@@ -22,24 +22,28 @@
     <div id="nicknamefinal" class="nickname">
     </div>
     <div class="titolo">
-     CREA QUIZ
+    info
     </div>
-    <button class="btnCrea" onclick="info()">Info</button>
-<br>
-    <input class="nomeQuiz" type="text" id="nomeQuiz" placeholder="Nome Quiz">
-    <input class="" type="file" id="file" name="">
-<center>
-  <input type="radio" id="publico" name="pub" value="Pubblico">
-  <label for="publico">Pubblico</label>
-  <br>
-  <input type="radio" id="Facile" name="difficolta" value="FACILE">
-  <label for="FACILE">FACILE</label>
-  <input type="radio" id="Medio" name="difficolta" value="MEDIO">
-  <label for="MEDIO">MEDIO</label>
-  <input type="radio" id="Difficile" name="difficolta" value="DIFFICILE">
-  <label for="DIFFICILE">DIFFICILE</label>
-</center>
-    <button class="btnCrea" onclick="crea()">Crea</button>
+    <label>Esempio file js:</label> 
+    <button id="apriJsonBtn">Apri JSON</button>
+
+    <script>
+        document.getElementById('apriJsonBtn').addEventListener('click', function () {
+            // Percorso del file JSON che vuoi aprire
+            const jsonFilePath = '../json/GeografiaFACILE.json';
+
+            // Apri il file in una nuova scheda
+            window.open(jsonFilePath, '_blank');
+        });
+    </script>
+    <br>
+    <label>
+        Difficolta Facile:10 domande<br>
+        Difficolta Medio:20 domande<br>
+        Difficolta Difficile:30 domande<br>
+    </label>
+    <br>
+    <label>I quiz saranno publicci e tutti li vedranno</label>
     <div class="back" onclick="back()">
       <img src="../immagini/back.png" width="50px">
   </div>

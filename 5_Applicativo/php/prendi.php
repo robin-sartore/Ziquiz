@@ -4,18 +4,15 @@
 // Leggi i dati dalla richiesta
 $request = json_decode(file_get_contents("php://input"), true);
 $name = $request['name'] ?? ''; // Otteniamo il nome dalla richiesta, se non presente sarà vuoto
-
 // Controlla che il nome non sia vuoto
 if (empty($name)||$name=="") {
     echo json_encode(['status' => 'error', 'message' => 'Nome non specificato']); // Se non c'è il nome, rispondi con errore
     exit;
 }
-
 $results = [];
 $directory = __DIR__ . '/../json/record/'; // Percorso della cartella dei file JSON
 $files = glob($directory . '*.json'); // Otteniamo tutti i file JSON
-
-// Itera attraverso tutti i file
+// Ciclo attraverso tutti i file
 foreach ($files as $file) {
     // Estrai il nome del file senza il percorso e l'estensione
     $fileName = basename($file, '.json');

@@ -1,6 +1,4 @@
 <?php
-// record.php
-
 // Leggi i parametri dalla query string
 $categoria = isset($_GET['categoria']) ? $_GET['categoria'] : '';
 $difficolta = isset($_GET['difficolta']) ? $_GET['difficolta'] : '';

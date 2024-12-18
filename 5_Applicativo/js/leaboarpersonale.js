@@ -9,7 +9,7 @@ function mostraDatiSalvati() {
     }
 
     // Esegui la richiesta POST per cercare il nome nel JSON
-    fetch('../php/search.php', {
+    fetch('../php/prendi.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

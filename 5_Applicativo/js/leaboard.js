@@ -1,7 +1,3 @@
-// Funzione per caricare i dati salvati
-console.log(sessionStorage.getItem("catlead"));
-console.log(sessionStorage.getItem("diflead"));
-
 function mostraDatiSalvati() {
     const categoria = sessionStorage.getItem("catlead");
     const difficolta = sessionStorage.getItem("diflead");
@@ -13,7 +9,7 @@ function mostraDatiSalvati() {
     }
 
     // Esegui la richiesta GET
-    fetch(`../php/record.php?categoria=${categoria}&difficolta=${difficolta}`, {
+    fetch(`../php/searchfinal.php?categoria=${categoria}&difficolta=${difficolta}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'

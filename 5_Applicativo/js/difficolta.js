@@ -9,7 +9,12 @@ function start(){
     close();
     var pag=window.open("domande.html");
 } 
-
+function startPer(nickname,difficolta){
+    sessionStorage.setItem("autore",nickname);
+    sessionStorage.setItem("3",difficolta)
+    close();
+    var pag=window.open("domandePub.html");
+}
 function difx(x){
     let prendidifficolta=document.getElementById("difficolta"+x).innerHTML;
     sessionStorage.setItem("3",prendidifficolta);

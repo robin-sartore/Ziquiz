@@ -1,13 +1,10 @@
 <?php
-// Abilitare la visualizzazione degli errori per il debug
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
 // Impostazioni per evitare caching
 header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
 header("Pragma: no-cache");
 header("Expires: Thu, 01 Jan 1970 00:00:00 GMT");
 // Funzione per ottenere il percorso del file JSON
-function getFilePath($categoria, $difficolta) {
+function prendiFilePath($categoria, $difficolta) {
     return __DIR__ . '/../json/record/' . $categoria . '_' . $difficolta . '_dati.json';
 }
 // Se è una richiesta POST (per aggiungere punteggi)
@@ -20,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $categoria = $data['categoria'];
         $difficolta = $data['difficolta'];
         // Percorso del file JSON
-        $filePath = getFilePath($categoria, $difficolta);
+        $filePath = prendiFilePath($categoria, $difficolta);
 
         // Crea la directory se non esiste
         $dirPath = dirname($filePath);

@@ -64,25 +64,69 @@ body{
     font-size: 20px;
     
 }
-.nickname
-{
+.nickname{
+    margin-top: 10px;
+    position: relative;
+    font-size: 70px;
+    text-align: center;
+    font-family: titolo;
+    color: #3C9B9B;
+    height: auto;
+  }
+.nomeQuiz{
     margin:0 auto; 
     display:block;
-    text-align: center;
     position:relative; 
     height: 100px;
     width: 400px;
     top: center;
-    background-color:#3C9B9B ;
-    color: rgba(236, 176, 225); 
-    resize: none;
-    font-size: 20px;
-
-
-    
+    border-radius: 12px;
+    background-color: #3C9B9B;
+    border:5px solid #77879C ;
+    color: #ECB0E1;
+    font-size: 40px;
 }
-
+.back
+{
+    position: fixed;
+    width: 50%;
+    bottom: 10px;
+    margin-left: 10px;
+}
 ::placeholder {
     color:  rgba(236, 176, 225); 
-    
+    text-align: center;  
+
   }
+  .btnCrea{
+    margin:0 auto; 
+    display:block;
+    position:relative; 
+    height: 100px;
+    width: 400px;
+    top: center;
+    border-radius: 12px;
+    background-color: #3C9B9B;
+    border:5px solid #77879C ;
+    color: #ECB0E1;
+    font-size: 40px;
+  }
+  /* Stile per input file */
+input[type="file"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px dashed #77879C; /* Bordo tratteggiato */
+    background-color: #f9f9f9; /* Sfondo chiaro */
+    color: #333;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="file"]:hover {
+    border-color: #3C9B9B; /* Cambia il bordo al passaggio del mouse */
+    background-color: #e6f7f7; /* Sfondo più chiaro */
+}
+

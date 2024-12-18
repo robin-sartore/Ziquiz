@@ -1,3 +1,24 @@
+@media (max-width: 768px) {
+    .risultato-container {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .punteggio {
+        font-size: 40px; /* Riduci dimensione */
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .risultato-container {
+        font-size: 14px; /* Adatta il testo */
+    }
+    .punteggio {
+        font-size: 30px;
+    }
+}
+
 @font-face {
     font-family: titolo;
     src: url(../font/Modak-Regular.ttf);

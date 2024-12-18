@@ -18,10 +18,10 @@ function crea(){
   }
     
 }
-function nickname(){
+function accesso(){
   
     close();
-    var cat=window.open("nickname.html");
+    var cat=window.open("accesso.html");
   
 }
 function leaderboard(){

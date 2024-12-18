@@ -1,3 +1,21 @@
+@media (max-width: 768px) {
+  .titolo {
+      font-size: 80px; /* Ridurre la dimensione del font */
+      margin-top: 10px; /* Maggiore spazio per il margine */
+  }
+
+  body {
+      padding: 10px; /* Aggiungere padding per evitare bordi stretti */
+  }
+}
+
+@media (max-width: 480px) {
+  .titolo {
+      font-size: 50px; /* Font più piccolo per schermi molto stretti */
+  }
+}
+
+
 @font-face {
     font-family: titolo;
     src: url(../font/Modak-Regular.ttf);

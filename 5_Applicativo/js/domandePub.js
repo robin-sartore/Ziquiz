@@ -1,6 +1,7 @@
 difficolta= sessionStorage.getItem("3");
 categoria= sessionStorage.getItem("2");
 nickname=sessionStorage.getItem("1");
+autore=sessionStorage.getItem("autore");
 let r;
 var punti=0;
 let totdomande;
@@ -29,8 +30,8 @@ function back() {
     var pag = window.open("Ziquiz.html");
 }
 function caricaDomande(){
-    console.log('../json/'+categoria+difficolta+'.json');
-    fetch('https://samtinfo.ch/i22RobinSartore/Ziquiz/json/'+categoria+difficolta+'.json')
+    console.log('https://samtinfo.ch/i22RobinSartore/Ziquiz/json/quizUtenti/'+autore+"_"+categoria+"_"+difficolta+'.json');
+ fetch('https://samtinfo.ch/i22RobinSartore/Ziquiz/json/quizUtenti/'+autore+"_"+categoria+"_"+difficolta+'.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Errore nell\'apertura');
@@ -53,7 +54,7 @@ function caricaDomande(){
 }
 
 
-function impostaDomanda(x, y) {
+function impostaDomanda(x, y,z) {
     document.getElementById(y).innerHTML = x;
 
 }
